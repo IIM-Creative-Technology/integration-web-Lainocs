@@ -20,7 +20,7 @@
     display: flex;
     height: 100px;
     align-items: center;
-    padding: 0 115px;
+    padding: 0 10vh;
 }
 
 #cont_acc nav ul {
@@ -136,6 +136,8 @@
     
 }
 
+
+
 .presentation_boxes {
     margin: 0 auto;
     display: flex;
@@ -242,6 +244,7 @@
 }
 
 .slider_emi_next {
+    width: calc(100%/3);
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -448,4 +451,152 @@
 #footer p {
     padding-top: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+
+    #cont_acc nav ul {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .presentation_box {
+        flex-direction: column;
+    }
+
+    .slider_all_emis {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #slider {
+        width: 100%;
+    }
+    
+    .slider_emi {
+
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .slider_emi_next {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #avis {
+        display: block;
+        flex-direction: column;
+    }
+
+    .personnaliser_G_title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personnaliser_G_new {
+        width: 40%;
+    }
+
+    .avis_G_text {
+        width: 100%;
+        position: absolute;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .avis_D {
+        margin: 0 auto;
+        opacity: 0.3;
+        height: 49vh;
+    }
+
+    .footer_cont ul {
+        height: auto;
+    }
+    .menu {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #cont_acc nav {
+        height: 20vh;
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    #cont_acc nav ul {
+        flex-direction: column;
+    }
+
+    #cont_acc nav ul li {
+        padding: 5px;
+    }
+
+    .container_acc_content_part_L {
+        width: 100%;
+    }
+
+    .container_acc_content_part_L_text {
+        width: 90%;
+        padding-top: 100px;
+    }
+    
+    .container_acc_content_part_R {
+        opacity: 0;
+        width: 0;
+    }
+
+    #explications .explications_para {
+        width: 90%;
+    }
+
+    .presentation_boxes {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .presentation_box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .personnaliser_content {
+        flex-direction: column;
+    }
+
+    .personnaliser_D, .personnaliser_G {
+        width: 100%;
+    }
+
+    .personnaliser_cat p {
+        width: 90%;
+    }
+
+    #personnaliser button {
+        width: 80%;
+    }   
+
+    .avis_D {
+        opacity: 0;
+        height: 0;
+    }
+
+    .avis_G {
+        display: flex;
+        align-items: center;
+        height: 40vh;
+    }
+
+    .avis_G_text {
+        height: auto;
+        padding: 0;
+    }
+
 }
